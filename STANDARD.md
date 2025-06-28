@@ -49,6 +49,10 @@
             "proxy": (boolean) true - always true if present,
             
             "proxyURL": (string) URL to the resource. Useful for things like MTL and elective courses where it's not feasible to have one copy of the data for every mentor class.
+
+            When fetching the proxy, implementations should look for an object in the items field with identical subject, courseCode and classID.
+
+            Implementations should not follow circular proxy chains, and may either stop following the chain when it forms a loop or treat the data as malformed.
         }
         ...
     ]
@@ -56,6 +60,8 @@
 ```
 
 When there is a need to put a link inside the data, do shorten any long links (longer than 20 characters). You are recommended to use [v.gd](https://v.gd) to shorten links, and those who implement software to read the data are recommended to convert all v.gd links into clickable links. *(You can add - to the end of a v.gd link to display a preview, for example [https://v.gd/meanie-](https://v.gd/meanie-).)*
+
+**All links must start with `https://`.**
 
 Do note that adding any inappropriate content to the repo (e.g. sexually explicit content or content encouraging terrorism) can and will cause your repo to be removed from the nush-hw-map, as well as potentially reported to GitHub and/or the relevant authorities.
 
