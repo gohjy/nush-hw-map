@@ -94,7 +94,7 @@ Example of implementation of standard:
         {
             "subject": "Math 1",
             "courseCode": "MA1133",
-            "classID": "M25102"
+            "classID": "M25102",
             "items": []
         },
         {
