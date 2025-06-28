@@ -3,7 +3,7 @@
 {
     "class": (string) class name, e.g. "M25102",
 
-    "lastUpdate": (string) last update, e.g. "20250101T12:00:00" - always in SGT,
+    "lastUpdate": (string) last update, e.g. "2025-01-01T12:00:00" - always in SGT (implied +08:00 to the end),
     
     "url": (string) URL this resource is served from, e.g. "https://yourname.github.io/some-repo-name/path/data.json",
 
@@ -65,7 +65,7 @@ Example of implementation of standard:
 ```
 {
     "class": "M25102",
-    "lastUpdate": "20250101T10:39:00",
+    "lastUpdate": "2025-01-01T10:39:00",
     "url": "https://gohjy.github.io/m25102-hw-data/",
     "homeworkData": [
         {
