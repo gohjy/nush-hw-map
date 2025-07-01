@@ -22,7 +22,7 @@
 
                     "content": (string) Homework content, e.g. "Complete Practice Paper 1 and check answers on Teams: https://v.gd/yourlinksomethingidk" (any link in the format of https://<url>(/path/to/resource)? is acceptable, for example https://example.com or https://example.org/something),
 
-                    "dueDate": (string) due date, e.g. "20251231T12:00:00" - always in SGT (if a homework has several parts with different due dates, put them in different items) (if there is no due time, just a due date, then if applicable put the start of the class timing, if not put 8 a.m.),
+                    "dueDate": (string) due date, e.g. "20251231T12:00:00" - always in SGT (if a homework has several parts with different due dates, put them in different items) (if there is no due time, just a due date, then if applicable put the start of the class timing, if not put 8 a.m.) (if there is no due date known, putting null as a value is acceptable),
                     
                     "optional": (boolean) (optional) true / false. If not given, assumed to be false.
 
@@ -82,7 +82,7 @@ Example of implementation of standard:
                 {
                     "type": "homework",
                     "content": "Read Wonder book - E-copy: v.gd/<this is an example link>",
-                    "dueDate": "20250631T00:09:30",
+                    "dueDate": null,
                     "optional": false
                 },
                 {
