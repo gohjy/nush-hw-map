@@ -11,7 +11,7 @@
         {
             "subject": (string) Name of subject as per the timetable, e.g. "EL 1" or "Hum 1",
             
-            "courseCode": (string) Course code, e.g. "MA1133" (check github.com/gohjy/nush-pos-data if unsure),
+            "courseCode": (string) Course code, e.g. "MA1133" (check github.com/gohjy/nush-pos-data if unsure), for admin/mentoring/CCE the course code "CE[level]100" should be used, e.g. CE1100 for Y1. If the course code prefix CE is used as above, the subject should always be "Mentoring/CCE". Implementations are encouraged to display such a course with the subject "Mentoring/CCE",
             
             "classId": (string) Class ID, for example for the class "CH1531B" the course code should be "CH1531" and the classID is "B". If the course is taken by mentor class (i.e. the entire cohort is taking it), the classID should be the mentor class e.g. "M25102".,
             
